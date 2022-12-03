@@ -5,12 +5,12 @@
 class WorldCup2022CliDashboard < Formula
   desc ""
   homepage "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard"
-  version "1.2.1"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard/releases/download/v1.2.1/world-cup-2022-cli-dashboard_1.2.1_Darwin_all.tar.gz"
-    sha256 "98824c791143bfa70f2001154021fc4f9f3062cf7646bf9bd1d694212ddae552"
+    url "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard/releases/download/v1.3.0/world-cup-2022-cli-dashboard_1.3.0_Darwin_all.tar.gz"
+    sha256 "1b1c82f62931761fe1ccb95c0bc9c72665aab5b9c3041d529f4b7d0f167a7581"
 
     def install
       bin.install "world-cup-2022-cli-dashboard"
@@ -19,16 +19,16 @@ class WorldCup2022CliDashboard < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard/releases/download/v1.2.1/world-cup-2022-cli-dashboard_1.2.1_Linux_arm64.tar.gz"
-      sha256 "43a7d18ab5f9f009943427e891a344d411a4a3f51a5661eb894e0e585f21deac"
+      url "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard/releases/download/v1.3.0/world-cup-2022-cli-dashboard_1.3.0_Linux_arm64.tar.gz"
+      sha256 "ecf77bbdeed94106171ba45192f7da7694aee1ee345605fbaa914a76acd5bb97"
 
       def install
         bin.install "world-cup-2022-cli-dashboard"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard/releases/download/v1.2.1/world-cup-2022-cli-dashboard_1.2.1_Linux_x86_64.tar.gz"
-      sha256 "b0c67e64aab0cd94a95cd651dcd7bcf3c51bad6ec610cb055d33e25fc7427825"
+      url "https://github.com/cedricblondeau/world-cup-2022-cli-dashboard/releases/download/v1.3.0/world-cup-2022-cli-dashboard_1.3.0_Linux_x86_64.tar.gz"
+      sha256 "e0bb29c189c166fd9faebaf1365b202494de98b06a35ab00019276da95df286e"
 
       def install
         bin.install "world-cup-2022-cli-dashboard"
